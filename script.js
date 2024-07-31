@@ -37,7 +37,33 @@ searchInput.addEventListener('keypress', function(event) {
     }
 });
 
-// 클릭 시 빨간 테두리 토글
-box.addEventListener('click',() => {
-    box.classList.toggle('clicked'); // 클릭할 때마다 'clicked' 클래스 토글
-})
+
+/*----------------------클릭시 빨간 테두리 표시--------------------------*/
+document.querySelectorAll('.answer-circle').forEach(circle => {
+    circle.addEventListener('click', function() {
+        // 클릭된 질문 ID와 답변 데이터 가져오기
+        const questionContainer = this.closest('.question-container');
+        const questionId = questionContainer.getAttribute('data-question-id');
+        const answer = this.getAttribute('data-answer');
+
+        // 모든 버튼에서 선택된 클래스 제거
+        questionContainer.querySelectorAll('.answer-circle').forEach(btn => {
+            btn.classList.remove('selected');
+        });
+
+        // 클릭된 버튼에 선택된 클래스 추가
+        this.classList.add('selected');
+
+        // 서버로 보낼 데이터를 저장하거나 처리
+        // 예: 서버로 데이터 전송
+        // sendDataToServer({ questionId, answer });
+
+        console.log(`Question ${questionId} answered with: ${answer}`);
+    });
+});
+
+  
+
+
+  
+  
