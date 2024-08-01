@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <title>SkinSync</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <div class="div">
+        <img class="chunk-dots" src="img/chunk-3-dots-horizontal.svg" />
+        <div class="text-wrapper">SkinSync</div>
+        <img class="home" src="img/home-03.svg" />
+
+        <!--검색창-->
+        <div class="search">
+          <input type="text" class="search-input" placeholder="">
+          <button class="search-button"></button>
+          <!-- <img class="group" src="img/group-20.png" /> -->
+        </div>
+
+        <!-- 진짜 임시 코드 -->
+        <div class="question-container">
+
+          <div class="question-container skintype_question_1" data-question-id="1">
+            <div class="rectangle"></div>
+            <p class="question_text">세안 후 피부가 당기는 느낌이 드나요?</p>
+            <div class="button-group">
+              <div class="answer-circle o-circle" data-answer="O">
+                <div class="o_answer_text">O</div>
+              </div>
+              <div class="answer-circle x-circle" data-answer="X">
+                <div class="x_answer_text">X</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="question-container skintype_question_2" data-question-id="2">
+            <div class="rectangle"></div>
+            <p class="question_text">주기적으로 트러블이 올라오나요?</p>
+            <div class="button-group">
+              <div class="answer-circle o-circle" data-answer="O">
+                <div class="o_answer_text">O</div>
+              </div>
+              <div class="answer-circle x-circle" data-answer="X">
+                <div class="x_answer_text">X</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="question-container skintype_question_3" data-question-id="3">
+            <div class="rectangle"></div>
+            <p class="question_text">상처가 아물면서 색소침착이 생기나요?</p>
+            <div class="button-group">
+              <div class="answer-circle o-circle" data-answer="O">
+                <div class="o_answer_text">O</div>
+              </div>
+              <div class="answer-circle x-circle" data-answer="X">
+                <div class="x_answer_text">X</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="question-container skintype_question_4" data-question-id="4">
+            <div class="rectangle"></div>
+            <p class="question_text">피부가 얇고 자국이 오래가나요?</p>
+            <div class="button-group">
+              <div class="answer-circle o-circle" data-answer="O">
+                <div class="o_answer_text">O</div>
+              </div>
+              <div class="answer-circle x-circle" data-answer="X">
+                <div class="x_answer_text">X</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+       
+
+        <!-- 피부타입 표시 부분 -->
+        <div class="overlap-5">
+          <!--여기도 user에 따라서 이름 변경돼야 함 -> 여기서 db 사용 소요 있음 ( 로그인 기능 )-->
+          <p class="p"><span class="span">김지성 </span> <span class="text-wrapper-11">님의 피부타입은 </span></p>
+          <div class="rectangle-6"></div>
+          <div class="rectangle-7"></div>
+          <div class="rectangle-8"></div>
+          <div class="text-wrapper-12">O</div>
+          <div class="text-wrapper-13">S</div>
+          <div class="text-wrapper-14">?</div>
+        </div>
+
+        
+        <!-- 챗지피티 작성 코드 부분 -->
+        <!-- <div class="skintype_question_1" data-question-id="1">
+          <div class="rectangle"></div>
+          <p class="question">세안 후 피부가 당기는 느낌이 드나요?</p>
+          <div class="button-group">
+            <div class="answer-button o_text" data-answer="O">O</div>
+            <div class="answer-button x-text" data-answer="X">X</div>
+          </div>
+        </div> -->
+        <!-- <div class="question-container" data-question-id="2">
+          <p class="question">주기적으로 트러블이 올라오나요?</p>
+          <div class="button-group">
+            <div class="answer-button o-button" data-answer="O">O</div>
+            <div class="answer-button x-button" data-answer="X">X</div>
+          </div>
+        </div>
+        <div class="question-container" data-question-id="3">
+          <p class="question">상처가 아물면서 색소침착이 생기나요?</p>
+          <div class="button-group">
+            <div class="answer-button o-button" data-answer="O">O</div>
+            <div class="answer-button x-button" data-answer="X">X</div>
+          </div>
+        </div>
+        <div class="question-container" data-question-id="4">
+          <p class="question">피부가 얇고 자극이 오래가나요?</p>
+          <div class="button-group">
+            <div class="answer-button o-button" data-answer="O">O</div>
+            <div class="answer-button x-button" data-answer="X">X</div>
+          </div>
+        </div> -->
+        
+
+        <!-- 카메라 버튼 오른쪽 -->
+        <!-- <div class="overlap-group-wrapper">
+          <div class="overlap-group-2">
+            <div class="rectangle-5"></div>
+            <img class="img" src="img/rectangle-165.svg" />
+            <div class="ellipse-7"></div>
+            <div class="ellipse-8"></div>
+          </div>
+        </div> -->
+
+        <div class="text-wrapper-9">AI추천 키워드</div>
+        <div class="text-wrapper-10">제품 검색</div>
+        
+        <div class="overlap-6">
+          <div class="overlap-wrapper">
+            <div class="overlap-7">
+              <img class="line" src="img/line-2.svg" />
+              <img class="line-2" src="img/line-3.svg" />
+              <img class="line-3" src="img/line-4.svg" />
+              <img class="line-4" src="img/line-5.svg" />
+            </div>
+          </div>
+          <div class="text-wrapper-15">모공</div>
+        </div>
+        <div class="overlap-8">
+          <div class="div-wrapper">
+            <div class="overlap-7">
+              <img class="line" src="img/line-2-1.svg" />
+              <img class="line-2" src="img/line-3-1.svg" />
+              <img class="line-3" src="img/line-4-1.svg" />
+              <img class="line-4" src="img/line-5-1.svg" />
+            </div>
+          </div>
+          <div class="text-wrapper-16">주름</div>
+        </div>
+        <div class="overlap-9">
+          <img class="rectangle-9" src="img/rectangle-12.svg" />
+          <img class="rectangle-10" src="img/rectangle-11.svg" />
+          <div class="group-2">
+            <div class="overlap-7">
+              <img class="line-5" src="img/line-2-7.svg" />
+              <img class="line-6" src="img/line-3-7.svg" />
+              <img class="line-7" src="img/line-4-2.svg" />
+              <img class="line-4" src="img/line-5-7.svg" />
+            </div>
+          </div>
+          <div class="group-3">
+            <div class="overlap-7">
+              <img class="line-5" src="img/line-2-7.svg" />
+              <img class="line-6" src="img/line-3-7.svg" />
+              <img class="line-7" src="img/line-4-7.svg" />
+              <img class="line-4" src="img/line-5-7.svg" />
+            </div>
+          </div>
+          <div class="text-wrapper-17">잡티</div>
+          <div class="text-wrapper-18">리들샷</div>
+        </div>
+        <div class="overlap-10">
+          <div class="group-4">
+            <div class="overlap-7">
+              <img class="line-5" src="img/line-2-3.svg" />
+              <img class="line-6" src="img/line-3-3.svg" />
+              <img class="line-7" src="img/line-4-3.svg" />
+              <img class="line-4" src="img/line-5-3.svg" />
+            </div>
+          </div>
+          <div class="text-wrapper-19">주름개선</div>
+        </div>
+        <div class="overlap-11">
+          <div class="group-5">
+            <div class="overlap-7">
+              <img class="line-5" src="img/line-2-7.svg" />
+              <img class="line-6" src="img/line-3-7.svg" />
+              <img class="line-7" src="img/line-4-7.svg" />
+              <img class="line-4" src="img/line-5-7.svg" />
+            </div>
+          </div>
+          <div class="text-wrapper-20">각질제거</div>
+        </div>
+        <div class="overlap-12">
+          <p class="text-wrapper-21">O S _ _ 타입 해석 바로가기</p>
+          <img class="group-6" src="img/group-103.png" />
+        </div>
+        <div class="overlap-13">
+          <div class="group-7">
+            <div class="overlap-7">
+              <img class="line-5" src="img/line-2-5.svg" />
+              <img class="line-6" src="img/line-3-5.svg" />
+              <img class="line-7" src="img/line-4-5.svg" />
+              <img class="line-4" src="img/line-5-5.svg" />
+            </div>
+          </div>
+          <div class="text-wrapper-22">피부결</div>
+        </div>
+        <div class="overlap-14">
+          <div class="group-7">
+            <div class="overlap-7">
+              <img class="line-5" src="img/line-2-6.svg" />
+              <img class="line-6" src="img/line-3-6.svg" />
+              <img class="line-7" src="img/line-4-6.svg" />
+              <img class="line-4" src="img/line-5-6.svg" />
+            </div>
+          </div>
+          <div class="text-wrapper-23">피부 보습</div>
+        </div>
+        <div class="group-8">
+          <img class="line-8" src="img/line-5-8.png" />
+          <img class="line-9" src="img/line-5-8.png" />
+          <div class="overlap-15">
+            <img class="line-10" src="img/line-5-8.png" /> <img class="line-11" src="img/line-5-8.png" />
+          </div>
+        </div>
+        <div class="overlap-16">
+          <div class="rectangle-11"></div>
+          <div class="text-wrapper-24">?</div>
+        </div>
+
+        <!-- 카메라 버튼 왼쪽 -->
+        <!-- <div class="overlap-17">
+          <div class="rectangle-12"></div>
+          <div class="group-9">
+            <div class="overlap-group-2">
+              <div class="rectangle-5"></div>
+              <img class="img" src="img/rectangle-165-1.svg" />
+              <div class="ellipse-7"></div>
+              <div class="ellipse-8"></div>
+            </div>
+          </div>
+          <div class="text-wrapper-25">PRO</div>
+        </div> -->
+
+        <!-- 핸드폰 틀 -->
+        <!-- <div class="home-indicator"></div> -->
+        <!-- <img class="frame" src="img/frame.svg" /> -->
+        <!-- <div class="status-bar">
+          <div class="overlap-18">
+            <img class="battery-outline" src="img/battery-outline-35-opacity.svg" />
+            <img class="status-bar-2" src="img/status-bar.svg" />
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+    <!-- script.js 라는 js 파일로 이 코드를 실행하겠다-->
+    <script src="script.js"></script>
+  </body>
+</html>
